@@ -5,7 +5,10 @@ use Slim\Http\Response;
 
 // Routes
 
-$app->get('/[{name}]', function (Request $request, Response $response, array $args) {
+$app->get('/', function (Request $request, Response $response) {
     // Render index view
-    return $this->renderer->render($response, 'index.phtml', $args);
+    return $this->renderer->render($response, 'index.phtml');
+});
+$app->get('/en', function (Request $request, Response $response) {
+  return $this->renderer->render($response, 'index-en.phtml');
 });

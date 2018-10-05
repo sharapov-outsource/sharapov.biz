@@ -7,17 +7,7 @@
     <title>Alexander Sharapov. Web-developer, system administrator, project-manager.</title>
     <meta name="description"
           content="Hi there, welcome to my personal page. If my knowledge and skills are suitable for your needs, please contact me.">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js" type="text/javascript"></script>
-      <script src="js/respond.min.js" type="text/javascript"></script>
-    <![endif]-->
+    <?php include('header.phtml'); ?>
       </head>
       <body id="top">
         <header id="home">
@@ -224,7 +214,7 @@
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-globe"></i><span>Upwork</span></h2>
-                  <p><a href="https://www.odesk.com/users/~01098641b6ad2a5cc0" target="_blank">Upwork Profile</a></p>
+                  <p><a href="https://www.upwork.com/users/~01098641b6ad2a5cc0" target="_blank">Upwork Profile</a></p>
                 </div>
               </div>
               <div class="col-md-4">
@@ -266,39 +256,6 @@
           </div>
         </footer>
         <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-        <script src="js/jquery.min.js" type="text/javascript"></script>
-        <script src="js/waypoints.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
-        <script src="js/jquery.flexslider.js" type="text/javascript"></script>
-        <script src="js/modernizr.js" type="text/javascript"></script>
-        <script src="js/scripts.js" type="text/javascript"></script>
-        <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-              try {
-                w.yaCounter6621283 = new Ya.Metrika({
-                  id: 6621283,
-                  clickmap: true,
-                  trackLinks: true,
-                  accurateTrackBounce: true,
-                  webvisor: true
-                });
-              } catch (e) {
-              }
-            });
-            var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
-              n.parentNode.insertBefore(s, n);
-            };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-            if (w.opera == "[object Opera]") {
-              d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-              f();
-            }
-          })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img
-                    src="https://mc.yandex.ru/watch/6621283" style="position:absolute; left:-9999px;"
-                    alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+        <?php include ('footer.phtml'); ?>
       </body>
     </html>
